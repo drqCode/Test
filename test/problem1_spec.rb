@@ -3,7 +3,7 @@ require 'rspec'
 require '../src/problem1'
 
 describe Problem1 do
-  describe '.sumOfEvenNumbers' do
+  describe '.sum_of_even_numbers' do
     context 'when is null array' do
       it 'returns 0' do
         expect(Problem1.sum_of_even_numbers(nil)).to eql(0)
