@@ -12,11 +12,11 @@
 class Problem3
   # @param [Array] numbers
   # @return [boolean]
-  def self.has_duplicates(numbers)
+  def self.duplicates?(numbers)
     return false if numbers.nil? || numbers.empty?
     (0..numbers.size - 1).each do |i|
-      return true if numbers[numbers[i].abs] < 0
-      numbers[numbers[i].abs] = -numbers[numbers[i].abs]
+      return true if numbers[numbers[i].abs - 1] < 0
+      numbers[numbers[i].abs - 1] = -numbers[numbers[i].abs - 1]
     end
     false
   end
