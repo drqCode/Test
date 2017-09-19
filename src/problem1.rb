@@ -4,9 +4,7 @@
 class Problem1
   # @param [Array] numbers
   def self.sum_of_even_numbers(numbers)
-    return 0 if numbers.nil? || numbers.empty?
-    sum = 0
-    numbers.each { |x| sum += x.even? ? x : 0 }
-    sum
+    return 0 if numbers.nil?
+    numbers.select {|x| x.even?}.sum
   end
 end
