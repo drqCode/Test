@@ -4,7 +4,7 @@
 class Problem2
   # @param [Array] numbers
   # @return [Array]
-  def self.get_largest_two_of(numbers)
+  def self.largest_two_of(numbers)
     return nil if numbers.nil? || numbers.empty?
     return numbers if numbers.size == 1
     first = numbers[0]
